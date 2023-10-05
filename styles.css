@@ -1,0 +1,86 @@
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 20px;
+            background-color: black; /* Background color for the entire page */
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg');
+        }
+        
+        h1 {
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .theorem-card {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+            text-decoration: none; /* Remove underline from anchor tag */
+            color: white; /* Text color */
+        }
+        
+        .theorem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+            color: white; /* Hover text color */
+        }
+        
+        @media (max-width: 768px) {
+            .theorem-card {
+                display: block;
+                max-width: 300px;
+                margin: 20px auto;
+            }
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid white;
+        }
+        
+        .home-link {
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+
+
+        .analysis {
+            background-color: #FF5733;
+        }
+        .h1analysis {
+            text-shadow: 4px 4px 8px #FF5733; /* Black outline */
+        }
+        .linear-algebra {
+            background-color: #3498db;
+        }
+        .h1linear-algebra {
+            text-shadow: 4px 4px 8px #3498db; /* Black outline */
+        }
+        .sketching {
+            background-color: #2ecc71;
+        }
+        .h1sketching {
+            text-shadow: 4px 4px 8px #2ecc71; /* Black outline */
+        }
+        
+        .chemistry {
+            background-color: #9b59b6;
+        }
+        .h1chemistry {
+            text-shadow: 4px 4px 8px #9b59b6; /* Black outline */
+        }
