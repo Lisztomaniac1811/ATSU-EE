@@ -14,8 +14,66 @@
 </head>
 <body>
     <main>
-    
+    <h3>თეორემა საშუალედო ცვლადი ზღვრის შესახებ</h3>
+    <p><u><i><b>თეორემა 3.</b></i></u> ვთქვათ \( \{x_n\} \), \( \{y_n\} \) და \( \{z_n\} \) არიან მიმდევრობები, რომელთათვისაც სრულდება პირობა \( x_n \leq y_n \leq z_n \). თუკი \( \{x_n\} \)-ისა და \( \{z_n\} \)-ის ზღვრები ერთი და იმავე რიცხვია:</p>
+     \[
+    \lim_{{n\to\infty}} x_n = \lim_{{n\to\infty}} z_n = a,
+    \]
+    <p>მაშინ \( \{y_n\} \)-ის ზღვარიც ამ რიცხვის ტოლია:</p>
+    \[
+    \lim_{{n\to\infty}} y_n = a.
+    \]
+<p><u><i><b>დამტკიცება 3.</b></i></u></p>
+    \[
+    \forall \epsilon > 0 \, \exists N_1, n > N_1 \, |x_n - \epsilon| \Rightarrow a - \epsilon \lt x_n \lt a + \epsilon\\
+   
+    \forall \epsilon > 0 \, \exists N_2, n > N_2 \, |z_n - \epsilon| \Rightarrow a - \epsilon \lt z_n \lt a + \epsilon\\
+   
+    N = \max(N_1, N_2) \\
 
+    \forall \epsilon > 0, \exists N, n > n_N \,  a - \epsilon \lt x_n \leq y_n \leq z_n \lt a + \epsilon \implies \\
+    \implies a - \epsilon \lt y_n \lt a + \epsilon \implies \\
+    \implies | y_n - a | \lt \epsilon \implies \\
+    \implies  \lim_{{n \to \infty}} y_n = a
+    \]
+    <p><u><i><b>დამტკიცების განმარტება.</b></i></u></p>
+        <p>დავუშვათ \( \epsilon > 0 \). ზღვის განმარტების თანახმად, არსებობს ორი რიცხვი \( N_1 \) and \( N_2 \) ისე, რომ ნებისმიერი \( n > N_1 \) და \( n > N_2 \) რიცხვებისთვის, ვიღებთ</p>
+\[
+| x_n - a | \lt \epsilon \quad \text{და} \quad | z_n - a | \lt \epsilon.
+\]
+
+<p>ახლა დავუშვათ, რომ \( N = \max(N_1, N_2) \). ყოველი \( n > N \) რიცხვისთვის, ვიღებთ</p>
+\[
+a - \epsilon \lt x_n \leq y_n \leq z_n \lt a + \epsilon.
+\]
+
+<p>აქედან გამომდინარეობს, რომ</p>
+\[
+a - \epsilon \lt y_n \lt a + \epsilon \implies
+| y_n - a | \lt \epsilon,
+\]
+
+<p>რაც ნიშნავს, რომ \( \lim_{{n \to \infty}} y_n = a \).</p>
+
+<p>ვინაიდან \( \epsilon \) ნებისმიერი მცირე რიცხვია, ამით მტკიცდება, რომ ნებისმიერი \( \epsilon > 0 \) რიცხვისთვის, არსებობს \( N \) ისე, რომ ნებისმიერი \( n > N \) რიცხვისთვის, \( |y_n - a| \lt \epsilon \). ეს არის ზღვრის განმარტება, ამგვარად,</p>
+\[
+\lim_{{n \to \infty}} y_n = a.
+\]
+
+<hr>
+<h3>ძირითადი თეორია ზღვარზე</h3>
+<p>იმისათვის, რომ \( x_n \) მიმდევრობის ზღვარი იყოს \( a \), აუცილებელია და საკმარისია შესრულდეს ტოლობა \( x_n = a +\alpha_n \), სადაც \( \alpha_n \) არის უსასრულოდ მცირე მიმდევრობა.</p>
+\[
+\forall \epsilon > 0, \exists N, n > N, | x_n - a | \lt \epsilon \implies \\
+\implies | \alpha_n | \lt \epsilon \implies \lim_{{n \to \infty}} \alpha_n = 0.
+\]
+<p>ანალოგიურად,</p>
+\[
+\forall \epsilon > 0, \exists N, n > N, | x_n - a | \lt \epsilon \implies  \\
+\implies \lim_{{n \to \infty}} x_n = a. 
+\]
+<hr>
+<h3>თეორემები მიმდევრობის შესახებ</h3>
 <hr>
 <ul class="pagination">
     <li>
