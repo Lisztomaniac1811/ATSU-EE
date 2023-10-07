@@ -11,13 +11,17 @@ body {
     /* background-size: cover; */
         }
         
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 85);
+        }
         h1 {
             color: #fff;
             padding: 20px;
             margin: 0;
             text-align: center;
         }
-        h2 {
+        h2, h3 {
             text-align: center;
         }
         
@@ -86,6 +90,17 @@ body {
                 padding-left: 20px;
                 padding-right: 20px;
             }
+            figure {
+                max-width: 380px;
+                width: 100%;
+                margin: 0 auto; /* Center the figure on desktop */
+              }
+              
+              /* Default styles for the img inside the figure */
+              figure img {
+                width: 100%;
+                height: auto;
+              }
         }
         @media (max-width: 768px) {
             main {
@@ -96,12 +111,29 @@ body {
                 padding-left:6px;
                 padding-right:6px;
             } */
+            figure {
+                width: 98%;
+                max-width: 100%;
+              }
+              figure img {
+                width: 300px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+              }
+              .mjx-mtd {
+                display: math !important;
+                text-align: center;
+            }
+            
         }
         main>h1 {
             color:black;
         }
 
-
+        .matrix {
+            overflow: auto !important;
+        }
 
 
         .analysis {
@@ -134,3 +166,5 @@ body {
         hr {
             border-top: 1px solid red;
         }
+        
+        
