@@ -114,6 +114,7 @@ body {
             figure {
                 width: 98%;
                 max-width: 100%;
+                margin: 0;
               }
               figure img {
                 width: 300px;
