@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კვირა 3 - ანალიზი 1 | ელექტრული ინჟინერია | აწსუ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <main>
+    <h3>თეორემები მიმდევრობის შესახებ (დამტკიცება)</h3>
+    <ol type="1">
+        <li>\[
+    \lim_{{n \to \infty}} (x_n \pm y_n) = \lim_{{n \to \infty}} x_n \pm \lim_{{n \to \infty}} y_n = a \pm b.
+    \]
+    <p><i><u>დამტკიცება:</u></i></p>
+    <p>
+    \[
+    x_n = a + \alpha_n, \hspace{1cm} y_n = b + \beta_n \Rightarrow \\
+    x_n+y_n=(a+b)+(\alpha_n + \beta_n)
+    \]</p>
+    <p>ვინაიდან ორი უსასრულოდ მცირეს ჯამი უსასრულოდ მცირეა, (\( \alpha_n + \beta_n\)) უსასრულოდ მცირე მიმდევრობაა, რომელსაც პირობითად ვუწოდოთ \(\gamma_n\). რადგან (\(x_n + y_n\))-სა და (\(a+b\))-ს შორის გასნხვავება არის უსასრულოდ მცირე მიმდევრობა \(\gamma\), ამიტომ \((x_n + y_n\))-ის ზღვარია (\(a+b\)).</p>
+        </li>
+        <li>
+            ორი კრებადი მიმდევრობის ნამრავლის ზღვარი ზღვართა ნამრავლის ტოლია:
+            \[
+    \lim_{{n \to \infty}} (x_n y_n) = \lim_{{n \to \infty}} x_n \cdot \lim_{{n \to \infty}} y_n = a b.
+    \]
+    <p><i><u>დამტკიცება:</u></i></p>
+    <p>
+    \[
+    x_n = a + \alpha_n, \hspace{1cm} y_n = b + \beta_n \Rightarrow \\
+    x_n \cdot y_n = (a+\alpha_n)(b+\beta_n)=ab+a\beta_n+b\alpha_n+\alpha_n\beta_n
+    \]</p>
+    <p>ვინაიდან უსასრულოდ მცირე და შემოსაზღვრული მიმდევრობების ნამრავლი უსასრულოდ მცირეა, \(a\beta_n\) და \(b\alpha_n\) უსასრულოდ მცირეა. ანალოგიურად, უსასრულოდ მცირე მიმდევრობათა ნამრავლი \(\alpha_n\beta_n\) უსასრულოდ მცირეა. უსასრულოდ მცირე მიმდევრობათა ჯამიც უსასრულოდ მცირეა, ასე რომ \(a\beta_n+b\alpha_n+\alpha_n\beta_n\) უსასრულოდ მცირე მიმდევრობაა, რომელიც კვლავ \(\gamma\)-ით აღვნიშნოთ. რადგან (\(x_ny_n\))-სა და (\(ab\))-ს შორის განსხვავება არის უსასრულოდ მცირე მიმდევრობა \(\gamma\), ამიტომ (\(x_ny_n\))-ის ზღვარია (\(ab\)).</p>
+        </li>
+        <li>
+            ორი კრებადი მიმდევრობის ფარდობის ზღვარი ზღვართა ფარდობის ტოლია:
+            \[
+    \lim_{{n \to \infty}} \frac{x_n}{y_n} = \frac{\lim_{{n \to \infty}} x_n}{\lim_{{n \to \infty}} y_n} = \frac{a}{b}, \: b \neq 0.
+    \]
+    <p><i><u>დამტკიცება:</u></i></p>
+    <p>
+    \[
+    x_n = a + \alpha_n, \hspace{1cm} y_n = b + \beta_n \Rightarrow \\
+    \frac{x_n}{y_n}=\frac{a+\alpha_n}{b + \beta_n}
+    \]</p>
+        </li>
+    </ol>
+<hr>
+<ul class="pagination">
+    <li>
+        <a href="analysis1-week2.html" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+    </li>
+    <li><a href="analysis1-week1.html">1</a></li>
+    <li><a href="analysis1-week2.html">2</a></li>
+    <li class="active"><a href="analysis1-week3.html">3</a></li>
+    <!-- <li><a href="analysis1-week4.html">4</a></li>
+    <li><a href="analysis1-week5.html">5</a></li>
+    <li><a href="analysis1-week6.html">6</a></li>
+    <li><a href="analysis1-week7.html">7</a></li>
+    <li><a href="analysis1-week8.html">8</a></li>
+    <li><a href="analysis1-week9.html">9</a></li>
+    <li><a href="analysis1-week10.html">10</a></li>
+    <li><a href="analysis1-week11.html">11</a></li>
+    <li><a href="analysis1-week12.html">12</a></li>
+    <li><a href="analysis1-week13.html">13</a></li>
+    <li><a href="analysis1-week14.html">14</a></li>
+    <li><a href="analysis1-week15.html">15</a></li>
+    <li><a href="analysis1-week16.html">16</a></li>
+    <li><a href="analysis1-week17.html">17</a></li>
+    <li><a href="analysis1-week18.html">18</a></li>
+    <li><a href="analysis1-week19.html">19</a></li>
+    <li><a href="analysis1-week20.html">20</a></li> -->
+    <li class="disabled">
+        <a href="analysis1-week4.html" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+    </li>
+</ul><br>
+</main>
+    <div class="footer">
+        <a href="analysis1.html" class="home-link">ანალიზი 1</a> | <a href="index.html" class="home-link">კურსები</a>
+    </div>
+</body>
+</html>

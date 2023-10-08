@@ -1,7 +1,7 @@
 body {
             font-family: Arial, sans-serif;
             text-align: center;
-            font-size: 20px;
+            font-size: 16px;
             background-color: black; /* Background color for the entire page */
             margin: 0;
             padding: 0;
@@ -103,6 +103,9 @@ body {
               }
         }
         @media (max-width: 768px) {
+            ol {
+                padding-left: 14px;
+            }
             main {
                 width:auto;
                 padding: 0 6px; /* 6 pixels of padding on the left and right */
