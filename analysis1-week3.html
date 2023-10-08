@@ -89,7 +89,17 @@
             <hr>
             <h3>ზოგიერთი შესანიშნავი ზღვარი</h3>
             <ol>
-                <li>\[ \lim_{{n\to\infty}} \left(1+\frac{1}{x}\right)^x = e, \quad \lim_{{n \to 0}} (1+x)^{\frac{1}{x}} = e \]</li>
+                <li>\[ \lim_{{n\to\infty}} \left(1+\frac{1}{x}\right)^x = e, \quad \lim_{{n \to 0}} (1+x)^{\frac{1}{x}} = e \]
+                    <p><u><b><i>დამტკიცება.</i></b></u></p>
+                    <p>
+                        \[
+                        n \leq x \lt n+1, \\
+                        \frac{1}{n+1} \lt 1 + \frac{1}{x} \leq \frac{1}{n} + 1, \\
+                        \left(1 + \frac{1}{n+1}\right)^n \lt \left(1 + \frac{1}{x}\right)^x \leq \left(1 + \frac{1}{n}\right)^{n+1},
+                        
+                        \]
+                    </p>
+                </li>
                 <li>\[ \lim_{{x \to 0}} \frac{\sin(x)}{x} = 1 \]</li>
                 <li>\[ \lim_{{x \to 0}} \frac{\arcsin(x)}{x} = 1 \]</li>
                 <li>\[ \lim_{{x \to 0}} \frac{\text{tg}(x)}{x} = 1 \]</li>
@@ -101,6 +111,20 @@
             </ol>
         </li>
     </ol>
+<hr>
+<h3>ძირითადი თეორია ტოლფას უსასრულოდ მცირეებზე</h3>
+<p>პირველ რიგში, განვიხილოთ თვისებები:</p>
+<ol type="i">
+<li><p>\(\alpha_n\)-ს უწოდებენ უფრო მაღალი რიგის უსასრულოდ მცირეს, ვიდრე \(\beta\)-ს, თუ \( \lim_{{x \to \infty}} \frac{\alpha_n}{\beta_n} = 0 \).</p></li>
+<li><p>\(\alpha_n\)-სა და \(\beta\)-ს უწოდებენ ერთი და იმავე რიგის უსასრულოდ მცირეს, თუ \( \lim_{{x \to \infty}} \frac{\alpha_n}{\beta_n} = \lambda \neq 0\).</p></li>
+<li><p>\(\alpha_n\) და \(\beta\) არიან ტოლფასი უსასრულოდ მცირეები, თუ \( \lim_{{x \to \infty}} \frac{\alpha_n}{\beta_n} = 1 \). ტოლფასობა აღინიშნება: \( \alpha_n \sim \beta_n \)</p> </li>
+</ol>
+<p><u><i><b>თეორემა.</b></i></u> თუ ნამრავლში ან ფარდობაში უსასრულოდ მცირეს შევცვლით მისი ტოლფასი უსასრულოდ მცირეთი, ამით ზღვრის შედეგი არ შეიცვლება.</p>
+<p><u><i><b>დამტკიცება.</b></i></u> ვთქვათ, \(\alpha_n \sim \alpha_n^{\prime}\) და \(\beta_n \sim \beta_n^{\prime}\). მაშინ:</p>
+<p>\[
+    \lim_{{n \to \infty}} \frac{\alpha_n}{\beta_n} = \lim_{{n \to \infty}} \left[\frac{\alpha_n}{\beta_n} \cdot \frac{\alpha_n}{\alpha_n^{\prime}} \cdot \frac{\beta_n^{\prime}}{\beta_n}\right] = \lim_{{n \to \infty}} \frac{\alpha_n^{\prime}}{\beta_n^{\prime}}
+    \]
+</p>
 <hr>
 <ul class="pagination">
     <li>
