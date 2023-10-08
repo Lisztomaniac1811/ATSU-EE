@@ -134,6 +134,7 @@ body {
 
         .matrix {
             overflow: auto !important;
+            overflow-y: hidden !important;
         }
 
 
