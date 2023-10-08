@@ -107,7 +107,8 @@ body {
                 font-size: 16px !important;
             }
             ol {
-                padding-left: 18px;
+                margin: 10px 0; /* Adjust the top and bottom margins as needed */
+  padding-left: 20px; /* Adjust the left padding to control the distance from the edge */
             }
             main {
                 width:auto;
