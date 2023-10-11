@@ -223,3 +223,42 @@ body {
         .MJXc-display {
             overflow-y: hidden !important;
         }
+
+
+
+
+.electron-configuration {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+}
+
+.electron-configuration .shell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.electron-configuration .subshell {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.electron-configuration .subshell .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.electron-configuration .electron {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
